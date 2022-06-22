@@ -30,11 +30,11 @@ const VerifyInfo = () => {
 			value: 'Mathematics',
 		},
 		{
-			label: 'Assessment ID',
+			label: 'Exam ID',
 			value: 'Mth112',
 		},
 		{
-			label: 'Assessment TIme',
+			label: 'Exam Duration',
 			value: '30 mins',
 		},
 		{
@@ -58,7 +58,15 @@ const VerifyInfo = () => {
 	};
 	return (
 		<div>
-			{showModal && <ErrorModal onClick={() => setShowModal(false)} />}
+			{showModal && (
+				<ErrorModal
+					content1='Verify your Information'
+					content2='Lorem ipsum dolor sit amet, sectetur adipiscing elit.'
+					link='/exam'
+					linkContent='Start Exam'
+					onClick={() => setShowModal(false)}
+				/>
+			)}
 			<div className='container'>
 				<div className='pl-[255px] pt-[83px] pb-[213px] pr-[123px]'>
 					<div>

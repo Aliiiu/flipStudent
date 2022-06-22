@@ -75,11 +75,13 @@ function App() {
 					onClick={closeModalHandler}
 				/>
 			)}
-			<main className='mainBg'>
-				<div className='container'>
-					{!isLoggedIn && <Login onLogin={loginHandler} />}
-					{isLoggedIn && <VerifyInfo />}
+			<main>
+				<div className='mainBg'>
+					<div className='container'>
+						{!isLoggedIn && <Login onLogin={loginHandler} />}
+					</div>
 				</div>
+				<div>{isLoggedIn && <VerifyInfo />}</div>
 			</main>
 		</div>
 	);

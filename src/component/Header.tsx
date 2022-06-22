@@ -1,6 +1,8 @@
+import { Link } from 'react-router-dom';
+
 interface THeader {
 	isAuthenticated: Boolean;
-	onLogout: any;
+	onLogout?: any;
 }
 const Header = ({ isAuthenticated, onLogout }: THeader) => {
 	return (
@@ -10,11 +12,13 @@ const Header = ({ isAuthenticated, onLogout }: THeader) => {
 					Our Savior International School
 				</h4>
 				<div>
-					<img
-						src={'/images/logo.png'}
-						className='relative h-[53px] w-[105px]'
-						alt='Flip logo'
-					/>
+					<Link to={'/'}>
+						<img
+							src={'/images/logo.png'}
+							className='relative h-[53px] w-[105px]'
+							alt='Flip logo'
+						/>
+					</Link>
 				</div>
 
 				{isAuthenticated && (
