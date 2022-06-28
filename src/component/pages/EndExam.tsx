@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../Header';
 
@@ -5,49 +6,53 @@ interface DArray {
 	label: string;
 	value: string;
 }
+const data: DArray[] = [
+	{
+		label: 'name',
+		value: 'Olajide Olajide',
+	},
+	{
+		label: 'Student ID',
+		value: '1234566',
+	},
+	{
+		label: 'Class',
+		value: 'SS3',
+	},
+	{
+		label: 'Department',
+		value: 'Science',
+	},
+	{
+		label: 'Subject',
+		value: 'Mathematics',
+	},
+	{
+		label: 'Exam ID',
+		value: 'Mth112',
+	},
+	{
+		label: 'Exam Duration',
+		value: '30 mins',
+	},
+	{
+		label: 'Total Number of Questions',
+		value: '50',
+	},
+	{
+		label: 'Attempted Questions',
+		value: '45',
+	},
+	{
+		label: 'Assessment Status',
+		value: 'Complete',
+	},
+];
 const EndExam = () => {
-	const data: DArray[] = [
-		{
-			label: 'name',
-			value: 'Olajide Olajide',
-		},
-		{
-			label: 'Student ID',
-			value: '1234566',
-		},
-		{
-			label: 'Class',
-			value: 'SS3',
-		},
-		{
-			label: 'Department',
-			value: 'Science',
-		},
-		{
-			label: 'Subject',
-			value: 'Mathematics',
-		},
-		{
-			label: 'Exam ID',
-			value: 'Mth112',
-		},
-		{
-			label: 'Exam Duration',
-			value: '30 mins',
-		},
-		{
-			label: 'Total Number of Questions',
-			value: '50',
-		},
-		{
-			label: 'Attempted Questions',
-			value: '45',
-		},
-		{
-			label: 'Assessment Status',
-			value: 'Complete',
-		},
-	];
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
 	return (
 		<div>
 			<div className='container'>

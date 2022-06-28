@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { HiOutlineLightBulb } from 'react-icons/hi';
 import ErrorModal from './UI/ErrorModal';
 import PopUpModal from './UI/PopModal';
@@ -7,45 +7,50 @@ interface DArray {
 	label: string;
 	value: string;
 }
+
+const data: DArray[] = [
+	{
+		label: 'name',
+		value: 'Olajide Olajide',
+	},
+	{
+		label: 'Student ID',
+		value: '1234566',
+	},
+	{
+		label: 'Class',
+		value: 'SS3',
+	},
+	{
+		label: 'Department',
+		value: 'Science',
+	},
+	{
+		label: 'Subject',
+		value: 'Mathematics',
+	},
+	{
+		label: 'Exam ID',
+		value: 'Mth112',
+	},
+	{
+		label: 'Exam Duration',
+		value: '30 mins',
+	},
+	{
+		label: 'Total Number of Questions',
+		value: '50',
+	},
+	{
+		label: 'Assessment Status',
+		value: 'Pending',
+	},
+];
+
 const VerifyInfo = () => {
-	const data: DArray[] = [
-		{
-			label: 'name',
-			value: 'Olajide Olajide',
-		},
-		{
-			label: 'Student ID',
-			value: '1234566',
-		},
-		{
-			label: 'Class',
-			value: 'SS3',
-		},
-		{
-			label: 'Department',
-			value: 'Science',
-		},
-		{
-			label: 'Subject',
-			value: 'Mathematics',
-		},
-		{
-			label: 'Exam ID',
-			value: 'Mth112',
-		},
-		{
-			label: 'Exam Duration',
-			value: '30 mins',
-		},
-		{
-			label: 'Total Number of Questions',
-			value: '50',
-		},
-		{
-			label: 'Assessment Status',
-			value: 'Pending',
-		},
-	];
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 
 	const [showModal, setShowModal] = useState<boolean | null>(false);
 	const [showPopModal, setShowPopModal] = useState<boolean | null>(false);

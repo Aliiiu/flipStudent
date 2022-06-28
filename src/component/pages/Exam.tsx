@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 import ExamSummary from '../ExamSummary';
 import ExamTimer from '../ExamTimer';
@@ -6,6 +7,9 @@ import Questions from '../Questions';
 import Button from '../UI/Button';
 
 const Exam = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<div className=''>
 			<div className='container'>
