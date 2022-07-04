@@ -154,3 +154,29 @@ p {
 	filter: drop-shadow(0px 8px 24px rgba(149, 157, 165, 0.2));
 	border-radius: 8px;
 }
+
+.calculator-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 6em);
+	grid-template-rows: minmax(7em, auto) repeat(5, 6em);
+}
+
+.span-two {
+	grid-row: span 2;
+}
+.span-row {
+	grid-column: span 2;
+}
+
+.output {
+	grid-column: 1 / -1;
+	background-color: #cbe2fd;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: space-around;
+	word-wrap: break-word;
+	word-break: break-all;
+	height: 233px;
+	padding: 24px;
+}

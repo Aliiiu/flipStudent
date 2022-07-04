@@ -5,7 +5,7 @@ import ErrorModal from './UI/ErrorModal';
 const ExamSummary = () => {
 	const [showModal, setShowModal] = useState<boolean | null>(false);
 	return (
-		<div className='examSummaryCard mt-[42px]'>
+		<div className='examSummaryCard'>
 			<div className='mb-[16px] pr-[20px]'>
 				<div className='pb-[16px]'>
 					<h4 className='text-[18px] font-semibold'>First Term Exam 2022</h4>

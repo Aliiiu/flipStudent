@@ -1,0 +1,99 @@
+[
+	{
+		"id": 1,
+		"questionText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis venenatis, sodales pretium felis, egestas tempus, elementum quisque tellus?",
+		"answerOptions": [
+			{
+				"id": 1,
+				"label": "A",
+				"answerTex": "Lorem ipsum dolor",
+				"isCorrect": false
+			},
+			{
+				"id": 2,
+				"label": "B",
+				"answerTex": "Lorem ipsum dolor",
+				"isCorrect": true
+			},
+			{
+				"id": 3,
+				"label": "C",
+				"answerTex": "Lorem ipsum dolor",
+				"isCorrect": false
+			},
+			{
+				"id": 4,
+				"label": "D",
+				"answerTex": "Lorem ipsum dolor",
+				"isCorrect": false
+			}
+		]
+	},
+	{
+		"id": 2,
+		"questionText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis venenatis, sodales pretium felis, egestas tempus, elementum quisque tellus?",
+		"questionInstruction": "Select true or false",
+		"answerOptions": [
+			{
+				"answerTex": "True",
+				"isCorrect": false
+			},
+			{
+				"answerTex": "False",
+				"isCorrect": true
+			}
+		]
+	},
+	{
+		"id": 3,
+		"questionText": "The iPhone was created by which company?",
+		"answerOptions": [
+			{
+				"id": "A",
+				"answerTex": "Samsung",
+				"isCorrect": false
+			},
+			{
+				"id": "B",
+				"answerTex": "Apple",
+				"isCorrect": true
+			},
+			{
+				"id": "C",
+				"answerTex": "Intel",
+				"isCorrect": false
+			},
+			{
+				"id": "D",
+				"answerTex": "Google",
+				"isCorrect": false
+			}
+		]
+	},
+	{
+		"id": 4,
+		"questionText": "How many Harry Potter books are there?",
+		"answerOptions": [
+			{
+				"id": "A",
+				"answerTex": "1",
+				"isCorrect": false
+			},
+			{
+				"id": "B",
+				"answerTex": "4",
+				"isCorrect": false
+			},
+			{
+				"id": "C",
+				"answerTex": "6",
+				"isCorrect": false
+			},
+			{
+				"id": "D",
+				"answerTex": "7",
+				"isCorrect": true
+			}
+		]
+	}
+]
