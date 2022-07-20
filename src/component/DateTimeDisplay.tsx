@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 
-const DateTimeDisplay: FC<{ value: number; isDanger: boolean }> = ({
+const DateTimeDisplay: FC<{ value: number | string; isDanger: boolean }> = ({
 	value,
 	isDanger,
 }) => {
